@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArtSphere - Online Art Gallery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+.hero{
+    height:500px;
+    background:url('https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-content p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ff6b6b;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.gallery{
+    padding:50px;
+}
+
+.gallery h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:red;
+    font-size:20px;
+    font-weight:bold;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🎨 ArtSphere</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Artists</a></li>
+<li><a href="#">Login</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Welcome to ArtSphere</h1>
+
+<p>Discover Unique Paintings and Digital Artworks</p>
+
+<a href="#" class="btn">Explore Gallery</a>
+
+</div>
+
+</section>
+
+
+
+<section class="gallery">
+
+<h2>Featured Artworks</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="https://picsum.photos/300/250?1">
+
+<div class="card-content">
+
+<h3>Sunset Painting</h3>
+
+<p>Artist: Sophia</p>
+
+<p class="price">$120</p>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://picsum.photos/300/250?2">
+
+<div class="card-content">
+
+<h3>Modern Abstract</h3>
+
+<p>Artist: James</p>
+
+<p class="price">$150</p>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://picsum.photos/300/250?3">
+
+<div class="card-content">
+
+<h3>Nature Beauty</h3>
+
+<p>Artist: Olivia</p>
+
+<p class="price">$180</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://picsum.photos/300/250?4">
+
+<div class="card-content">
+
+<h3>Digital Dreams</h3>
+
+<p>Artist: Ethan</p>
+
+<p class="price">$200</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 ArtSphere | Online Art Gallery</p>
+
+</footer>
+
+</body>
+</html>
